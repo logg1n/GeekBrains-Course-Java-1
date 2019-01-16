@@ -32,7 +32,6 @@ public class lesson3_2 {
         System.out.println("Система загадала слово. Поробуйте Угадать!");
         String answer = scanner.nextLine().toLowerCase();
         String randowWord = words[num];
-        System.out.println(randowWord);
         /* Сравниваем загадоную строку и ввседеную строку на несовпадение */
 
         String strin = null;

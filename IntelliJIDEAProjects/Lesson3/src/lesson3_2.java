@@ -28,16 +28,21 @@ public class lesson3_2 {
 
         int num = random.nextInt(words.length);
         /* после сканирования преобразуем строку в нижний регистр */
-        String answer = scanner.next().toLowerCase();
 
         System.out.println("Система загадала слово. Поробуйте Угадать!");
+        String answer = scanner.nextLine().toLowerCase();
+        String randowWord = words[num];
+        System.out.println(randowWord);
         /* Сравниваем загадоную строку и ввседеную строку на несовпадение */
-        while (!answer.equals(words[num])) {
+
+        String strin = null;
+        while (!answer.equals(randowWord)) {
             System.out.println("Вы не угадали. Посмотрите внимательнее. И подумайте!");
-            System.out.println(charEq(words[num], answer));
+            strin = charEq(randowWord, answer, strin);
+            System.out.println(strin);
             System.out.println("Повторите ввод");
 
-            answer = scanner.next().toLowerCase();
+            answer = scanner.nextLine().toLowerCase();
         }
 
         System.out.println("Поздравляю вы угадали!");
@@ -47,15 +52,24 @@ public class lesson3_2 {
      * создаем массив для заполнения слова подсказки
       * Посимвольно сравниваем строки аргументов совпадения записываем в массив
       * преобразуем массив в строку и возпращаем*/
-    static private String charEq(String myst, String answ){
+    static private String charEq(String myst, String answ, String strin){
         int count = myst.length() <= answ.length() ? myst.length() : answ.length();
         char[] str = {'*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*'};
 
+        if (strin != null){
+            for (int i = 0; i < count; i++){
+                if (strin.charAt(i) != str[i]){
+                    str[i] = strin.charAt(i);
+                }
+            }
+        }
         for (int i = 0; i < count; i++){
             if (myst.charAt(i) == answ.charAt(i)){
                 str[i] = myst.charAt(i);
             }
         }
+
+
 
         return new String(str);
     }

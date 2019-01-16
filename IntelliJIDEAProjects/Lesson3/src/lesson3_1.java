@@ -31,7 +31,7 @@ public class lesson3_1 {
                     System.out.println("Система загадала число. Поробуйте Угадать!");
                 }
 
-                System.out.printf("У Вас %d %s\n", count, count > 0? "попытки": "попыток");
+                System.out.printf("Количество попыток: %d\n", count );
                 System.out.print("Ваше число: ");
 
             /* Ввод числ0о с System.in через функцию обертку,

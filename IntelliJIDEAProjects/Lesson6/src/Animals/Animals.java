@@ -6,15 +6,12 @@ abstract class Animals {
    private int limitSwim ;
    private String type;
 
-   protected void setType(String type){
-      this.type = type;
-   }
-
-   public Animals(){ }
-   public Animals(int limitRun, float limitJump, int limitSwim){
+   public Animals(String type){ this.type = type; }
+   public Animals(String type, int limitRun, float limitJump, int limitSwim){
       this.limitRun = limitRun;
       this.limitJump = limitJump;
       this.limitSwim = limitSwim;
+      this.type = type;
    }
 
    public void run(int rn){

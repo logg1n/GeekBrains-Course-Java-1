@@ -2,12 +2,10 @@ package Animals;
 
 public class Cat extends Animals {
    public Cat(){
-      super(200, 2, 0);
-      setType("Cat");
+      super("Котик", 200, 2, 0);
    }
-   public Cat(int limitRun, float limitJump, int limitSwim) {
-      super(limitRun, limitJump, limitSwim);
-      setType("Cat");
+   public Cat(int limitRun, float limitJump, int limitSwim){
+      super("Котик", limitRun, limitJump, limitSwim);
    }
 
    @Override

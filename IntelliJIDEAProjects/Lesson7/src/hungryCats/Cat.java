@@ -18,20 +18,20 @@ public class Cat {
 
 	public Cat() {
 		appetite = rand.nextInt(5) + 5;
-		satiety = false; // ------------------------- автоматическое присваивание при создании поля обьекта
 	}
 
 	public void eat(Plate obj){
 		if (appetite > obj.getFood()){
 			return;
 		}
-		if (obj.cutFood(this.appetite))
+		if (obj.cutFood(appetite))
 			satiety = true;
 	}
 
-// ########################################################
-	public void printS(){
-		System.out.printf("Cat eat -> %b\n", this.satiety);
+/* ########################################################
+	public void printSatiety(){
+		System.out.printf("Cat eat -> %b,\n Apettit -> %d\n", satiety, appetite);
 	}
+	*/
 }
  

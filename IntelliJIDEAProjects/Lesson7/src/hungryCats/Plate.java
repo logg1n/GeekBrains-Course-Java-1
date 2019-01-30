@@ -19,8 +19,9 @@ public class Plate {
 	public void putEat( int val){
 		food += val;
 	}
-// ########################################################
-	public void printF(){
+/* ########################################################
+	public void printFood(){
 		System.out.printf("plate h foood -> %d\n", food);
 	}
+	*/
 }

@@ -1,0 +1,27 @@
+package hungryCats;
+
+public class Plate {
+	private int food;
+
+	public int getFood(){
+		return food;
+	}
+	
+	public Plate() {
+		food = 30;
+	}
+
+	protected boolean cutFood(int val) {
+		food -= val;
+		return true;
+	}
+
+	public void putEat( int val){
+		food += val;
+	}
+/* ########################################################
+	public void printFood(){
+		System.out.printf("plate h foood -> %d\n", food);
+	}
+	*/
+}

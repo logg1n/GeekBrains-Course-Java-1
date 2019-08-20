@@ -13,3 +13,5 @@
    3. [_Урок 5_](https://github.com/logg1n/GeekBrains-Course-Java-1/tree/master/IntelliJIDEAProjects/Lesson5/src)
 
    4. [_Урок 6_](https://github.com/logg1n/GeekBrains-Course-Java-1/tree/master/IntelliJIDEAProjects/Lesson6/src)
+   
+   5. [_Урок 7_](https://github.com/logg1n/GeekBrains-Course-Java-1/tree/master/IntelliJIDEAProjects/Lesson7/src/hungryCats)
